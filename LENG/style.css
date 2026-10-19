@@ -1,18 +1,36 @@
 header {
     display: flex;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 20px;
-}
-.logoa {
-    display: flex;
-    justify-content: space-between;
-    justify-content: ;
-}
-.nabegatzailea {
-    display: flex;
-    justify-content: space-between;
-    justify-content: ;
+    background-color: whitesmoke;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 }
+
+.logoa {
+    width: 35%;
+    align-items: center;
+
+}
+
+img {
+    width: 250px;
+    height: 70px;
+}
+
+.nabegatzailea {
+    display: flex;
+    align-items: center;
+    
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(197, 24, 24);
+}
+
+a:hover {
+    color: red;
+}
+
