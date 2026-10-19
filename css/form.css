@@ -1,0 +1,13 @@
+body{
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.izenabizen{
+    display: flex;
+
+}
+
+.izen{
+    margin-right: 10px;
+}
