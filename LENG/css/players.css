@@ -13,6 +13,7 @@ img {
     width: 200px;
     border: 2px solid black;
     align-items: flex-end;
+    border-radius: 10px 10px 0 0;
 }
 
 .irudiak {
@@ -42,14 +43,30 @@ img {
     text-align: center;
     padding: 11px 9px;
     box-sizing: border-box;
-    opacity: 65%;
+    opacity:95%;
+}
+
+.Izen{
+    position: absolute;
+    bottom: 1;
+    left: 0;
+    right: 0;
+    background-color: rgb(68, 68, 68);
+    color: white;
+    font-family: Impact;
+    font-size: 25px;
+    text-align: center;
+    padding: 2px 1px;
+    box-sizing: border-box;
+    opacity:95%;
+    border-radius: 0 0 10px 10px;
 }
 
 .jokalari img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Evita que la imagen se deforme */
-    border: 1px solid #000; /* Borde fino oscuro */
+    object-fit: cover;
+    border: 1px solid #000;
     display: block;
 }
 
@@ -61,7 +78,7 @@ img {
 .botoi {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 
