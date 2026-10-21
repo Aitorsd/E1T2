@@ -58,9 +58,11 @@ header {
 /*MAIN*/
 
 main{
-    margin-top: 8%;
+    margin-top: 0%;
     margin-right: 30%;
     margin-left: 30%;
+    margin-bottom: 5%;
+    
 }
 
 .izenabizen{
@@ -80,8 +82,34 @@ textarea{
     resize: none;
 }
 
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
 hr{
     margin-left: 5%;
     margin-right: 5%;
     color: rgb(255, 255, 255);
+}
+
+fieldset {
+    border: 5px solid black;
+    border-radius: 35px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(223, 223, 223);
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+input {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
 }
