@@ -8,6 +8,13 @@ img {
     display: block;
 }
 
+h4 {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    text-align: justify;
+}
+
 /*HEADER*/
 header {
     display: flex;
@@ -65,7 +72,10 @@ aside {
     width: 20%;
     background-color: rgb(219, 219, 219);
     border-radius: 45px;
-    margin: 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 5px;
 }
 
 section {
@@ -105,6 +115,8 @@ iframe {
     margin-right: 15px;
     text-align: row;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
