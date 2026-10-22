@@ -43,7 +43,7 @@ header {
     margin-right: 15px;
 }
 
-.nabegatzailea > a {
+.nabegatzailea>a {
     margin: 20px;
     text-decoration: none;
     color: rgb(197, 24, 24);
@@ -51,7 +51,7 @@ header {
     transition: color 0.5s ease;
 }
 
-.nabegatzailea > a:hover {
+.nabegatzailea>a:hover {
     color: rgb(10, 9, 9);
 }
 
@@ -87,6 +87,7 @@ img {
     position: relative;
     width: 200px;
     height: 200px;
+    background-color: white;
 }
 
 .testua {
@@ -102,10 +103,10 @@ img {
     text-align: center;
     padding: 11px 9px;
     box-sizing: border-box;
-    opacity:95%;
+    opacity: 95%;
 }
 
-.Izen{
+.Izen {
     position: absolute;
     bottom: 1;
     left: 0;
@@ -117,7 +118,7 @@ img {
     text-align: center;
     padding: 2px 1px;
     box-sizing: border-box;
-    opacity:95%;
+    opacity: 95%;
     border-radius: 0 0 10px 10px;
 }
 

@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px;
+    height: 100px;
+    background-color: rgb(233, 233, 233);
+}
+
+footer > div {
+    height: 100%;
+}
+
+.logoafooter img {
+    height: 100px;
+    width: auto;
+}
+
+.saresozialak {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+    width: 30%;
+}
+
+.saresozialak a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saresozialak img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+}
+
+.informazioafooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
