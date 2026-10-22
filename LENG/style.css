@@ -2,15 +2,12 @@ body {
     margin: 0px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+h1, h2, h3, h4, h5, h6 {
+    font-family:Arial, Helvetica, sans-serif
 }
 
 h4 {
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: normal;
     text-align: justify;
 }
@@ -61,7 +58,8 @@ header {
     color: rgb(10, 9, 9);
 }
 
-/*MAIN*/
+
+/*MAIN (ASIDE)*/
 main {
     display: flex;
     justify-content: space-between;
@@ -69,14 +67,70 @@ main {
 }
 
 aside {
-    width: 20%;
+    width: 30%;
     background-color: rgb(219, 219, 219);
     border-radius: 45px;
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 5px;
+    
 }
+
+aside h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+
+}
+
+aside h3 {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.mapa {
+    border-radius: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.berriakaside {
+    width: 100%;
+}
+
+.berriakaside div {
+    background-color: rgb(219, 219, 219);
+    border-radius: 45px;
+    margin: 15px;
+}
+
+.berriakaside div img {
+    border-radius: 35px;
+    width: 250px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+aside button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border-radius: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+/*MAIN (CONTENT)*/
 
 section {
     padding-left: 5px;
@@ -195,3 +249,10 @@ footer > div {
     object-fit: contain;
 }
 
+.informazioafooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+}
