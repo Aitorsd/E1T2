@@ -1,0 +1,170 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+
+.goiburua {
+    background-color: #202020;
+    padding: 20px;
+    border-bottom: 3px solid #e31837;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.goiburua h1 {
+    color: #e31837;
+}
+
+
+.goiburua ul {
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.goiburua a {
+    color: white;
+    text-decoration: none;
+}
+
+.goiburua a:hover {
+    color: #e31837;
+}
+
+
+.edukiontzia {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+
+.sarrera {
+    margin-bottom: 30px;
+}
+
+.sarrera h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+.albiste-nagusia {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+
+    background-color: #222;
+    border: 2px solid #e31837;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin-bottom: 35px;
+}
+
+.albiste-nagusia img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+
+.albiste-edukia {
+    padding: 20px;
+}
+
+.albiste-edukia h2,
+.albiste-edukia h3 {
+    margin: 10px 0;
+}
+
+.albiste-edukia p {
+    line-height: 1.6;
+}
+
+.etiketa {
+    color: #e31837;
+    font-weight: bold;
+}
+
+.data {
+    color: #bbb;
+    font-size: 14px;
+}
+
+
+.albiste-sarea {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+
+    background-color: #222;
+    border: 2px solid #e31837;
+    border-radius: 10px;
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+.albiste-sarea img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.albiste-sarea .albiste-edukia {
+    padding: 20px;
+
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.albistea {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.albistea img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.albiste-edukia a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+
+    background-color: #e31837;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.albiste-edukia a:hover {
+    background-color: #b5122b;
+}
+
+
+.oina {
+    background-color: #202020;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
