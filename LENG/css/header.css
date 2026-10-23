@@ -1,4 +1,4 @@
-header {
+.header-bilatzailea {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,7 @@ header {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 15px;
+    
 }
 
 .nabegatzailea > a {
@@ -42,6 +43,13 @@ header {
 
 .nabegatzailea > a:hover {
     color: rgb(10, 9, 9);
+}
+
+.nabegatzaile-lerroa {
+    width: 100%;
+    height: 15px;
+    background-color: rgb(255, 87, 87);
+    margin:0px;
 }
 
 -------------------------
@@ -59,3 +67,4 @@ h4 {
     font-weight: normal;
     text-align: justify;
 }
+

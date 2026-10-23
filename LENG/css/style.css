@@ -18,17 +18,18 @@ h4 {
 main {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
 }
 
 aside {
     width: 30%;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
     border-radius: 45px;
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 5px;
+    border: 5px solid rgb(221, 221, 221);
     
 }
 
@@ -60,7 +61,7 @@ aside h3 {
 }
 
 .berriakaside div {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
     border-radius: 45px;
     margin: 15px;
 }
@@ -73,7 +74,7 @@ aside h3 {
 }
 
 aside button {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     font-weight: bold;
     width: 100%;
@@ -81,8 +82,12 @@ aside button {
     border-radius: 35px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 17px;
-    text-decoration: none;
     margin-top: 15px;
+}
+
+aside button a,
+.testua button a {
+    text-decoration: none;
 }
 
 /*MAIN (CONTENT)*/
@@ -92,14 +97,15 @@ section {
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
     
 }
 
 section > div {
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(255, 255, 255);
     border-radius: 45px;
     margin: 25px;
+    border: 5px solid rgb(221, 221, 221);
 }
 
 .informazioa {
@@ -147,13 +153,12 @@ iframe {
 }
 
 .testua button {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     font-weight: bold;
     width: 30%;
     text-align: center;
     border-radius: 35px;
-    border: 3px solid rgb(197, 24, 24);
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 30px;
     text-decoration: none;
