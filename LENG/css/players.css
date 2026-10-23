@@ -68,7 +68,7 @@ header {
     font-family: arial;
 }
 
-img {
+.irudiak img {
     width: 200px;
     border: 2px solid black;
     align-items: flex-end;
@@ -122,13 +122,17 @@ img {
     border-radius: 0 0 10px 10px;
 }
 
+-------------
+
 .jokalari img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid #000;
+    border: 35px solid #000;
     display: block;
 }
+
+------------
 
 .textua h1 {
     display: flex;
