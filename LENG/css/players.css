@@ -62,14 +62,14 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin-left: 20%;
     margin-right: 20%;
     font-family: arial;
 }
 
 .irudiak img {
-    width: 200px;
+    width: 196px;
     border: 2px solid black;
     align-items: flex-end;
     border-radius: 10px 10px 0 0;
@@ -92,7 +92,7 @@ header {
 
 .testua {
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     left: 0;
     right: 0;
     background: grey;
@@ -108,7 +108,7 @@ header {
 
 .Izen {
     position: absolute;
-    bottom: 1;
+    bottom: 0;
     left: 0;
     right: 0;
     background-color: rgb(68, 68, 68);
