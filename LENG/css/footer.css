@@ -35,6 +35,11 @@ footer > div {
     height: 100px;
     width: 100px;
     object-fit: contain;
+    transition: color 1s ease;
+}
+
+.saresozialak img:hover {
+    transform: scale(1.15);
 }
 
 .informazioafooter {
