@@ -113,3 +113,7 @@ input {
     font-size: 20px;
     border-radius: 15px;
 }
+
+.newsletterlabel, .newsletter{
+ display: flex;
+}
