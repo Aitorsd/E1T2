@@ -4,7 +4,7 @@
     align-items: center;
     padding: 15px;
     height: 100px;
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(235, 235, 235);
 }
 
 footer > div {
@@ -35,7 +35,8 @@ footer > div {
     height: 100px;
     width: 100px;
     object-fit: contain;
-    transition: color 1s ease;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .saresozialak img:hover {
