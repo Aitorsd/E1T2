@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
     margin: 0px;
-    background-image: href('../asset/fondopantaila.avif');
+    background-image: url('../asset/fondopantaila.avif');
     background-size: cover;
-    font-family: ubuntu, Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
+.testua h4 {
+    font-size: 17px;
 
-
-h4 {
-    font-size: 20px;
-    font-weight: normal;
-    text-align: justify;
 }
 
 /*MAIN (ASIDE)*/
@@ -22,6 +23,7 @@ main {
 
 aside {
     width: 30%;
+    height: 100%;
     background-color: white;
     border-radius: 45px;
     margin-top: 30px;
@@ -36,7 +38,7 @@ aside h1 {
     text-align: center;
     font-size: 20px;
     margin-top: 15px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 
 }
 
@@ -50,9 +52,7 @@ aside h3 {
 
 .mapa {
     border-radius: 35px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin: 15px;
 }
 
 .berriakaside {
@@ -69,7 +69,6 @@ aside h3 {
     border-radius: 35px;
     width: 250px;
     height: auto;
-    margin-bottom: 5px;
 }
 
 aside button {
@@ -79,7 +78,6 @@ aside button {
     width: 100%;
     text-align: center;
     border-radius: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 17px;
     margin-top: 15px;
 }
@@ -88,7 +86,6 @@ aside button a,
 .testua button a {
     text-decoration: none;
 }
-
 
 
 /*MAIN (CONTENT)*/
@@ -122,7 +119,7 @@ section > div {
 iframe {
     border-radius: 35px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .testua {
@@ -130,7 +127,6 @@ iframe {
     height: 100%;
     margin-right: 15px;
     text-align: row;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -160,7 +156,6 @@ iframe {
     width: 30%;
     text-align: center;
     border-radius: 35px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 30px;
     text-decoration: none;
 }

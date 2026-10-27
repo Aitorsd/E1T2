@@ -4,7 +4,7 @@ body {
 
 h4 {
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     font-weight: normal;
     text-align: justify;
 }
@@ -18,7 +18,7 @@ header {
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
 .logoa {
@@ -65,7 +65,7 @@ header {
     padding: 15px;
     margin-left: 20%;
     margin-right: 20%;
-    font-family: arial;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
 .irudiak img {
@@ -97,7 +97,7 @@ header {
     right: 0;
     background: grey;
     color: white;
-    font-family: Arial;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     font-size: 11px;
     font-style: italic;
     text-align: center;
@@ -113,7 +113,7 @@ header {
     right: 0;
     background-color: #444444;
     color: white;
-    font-family: Impact;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     font-size: 25px;
     text-align: center;
     padding: 2px 1px;
@@ -148,7 +148,7 @@ header {
 
 button {
     padding: 8px 16px;
-    font-family: Arial;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     font-size: 14px;
     border-radius: 4px;
     color: blue;
