@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(235, 235, 235);
+    background-color: #ebebeb;
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -34,27 +34,27 @@
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 15px;
-    border: 5px solid rgb(221, 221, 221);
+    border: 5px solid #dddddd;
 }
 
 .nabegatzailea  a {
     margin: 20px;
     text-decoration: none;
-    color: rgb(197, 24, 24);
+    color: #c51818;
     align-items: center;
     transition: color 1.5s ease;
     transition: transform 0.3s ease;
 }
 
 .nabegatzailea > a:hover {
-    color: rgb(133, 18, 18);
+    color: #851212;
     transform: scale(1.03);
 }
 
 .nabegatzaile-lerroa {
     width: 100%;
     height: 15px;
-    background-color: rgb(255, 87, 87);
+    background-color: #ff5757;
     margin:0px;
 }
 

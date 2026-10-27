@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(223, 223, 223);
+    background-color: #dfdfdf;
     padding: 15px;
     width: 100%;
     box-sizing: border-box;
@@ -46,13 +46,13 @@ header {
 .nabegatzailea > a {
     margin: 20px;
     text-decoration: none;
-    color: rgb(197, 24, 24);
+    color: #c51818;
     align-items: center;
     transition: color 0.5s ease;
 }
 
 .nabegatzailea > a:hover {
-    color: rgb(10, 9, 9);
+    color: #0a0909;
 }
 
 /*MAIN*/
@@ -89,7 +89,7 @@ h1 {
 hr{
     margin-left: 5%;
     margin-right: 5%;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 fieldset {
@@ -98,14 +98,14 @@ fieldset {
     padding: 20px;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: rgb(223, 223, 223);
+    background-color: #dfdfdf;
 }
 
 textarea {
     width: 100%;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid black;
 }
 
 input {
