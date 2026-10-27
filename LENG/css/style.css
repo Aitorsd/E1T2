@@ -17,18 +17,18 @@ h4 {
 main {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(235, 235, 235);
+    background-color: #ebebeb;
 }
 
 aside {
     width: 30%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 45px;
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 25px;
     margin-right: 5px;
-    border: 5px solid rgb(221, 221, 221);
+    border: 5px solid #dddddd;
     
 }
 
@@ -60,7 +60,7 @@ aside h3 {
 }
 
 .berriakaside div {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 50px;
     margin: 15px;
 }
