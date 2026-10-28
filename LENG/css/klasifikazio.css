@@ -56,8 +56,7 @@ header {
 
 /*MAIN*/
 
-body {
-    margin: 0;
+main {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(16, 1fr);
