@@ -13,6 +13,7 @@ h4 {
 
 
 main {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(7, minmax(0, 1fr));
     grid-template-rows: repeat(16, minmax(0, 1fr));
@@ -21,7 +22,36 @@ main {
     box-sizing: border-box;
     padding: 20px;
     background-color: #ebebeb;
+    background-image: url('../asset/fondo.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+
+    background-attachment: fixed;
+    overflow: hidden;
 }
+
+
+/*GIF OSCURO???*/
+
+main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 0;
+}
+
+main * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/*MAIN*/
+
 
 .container {
     display: flex;
@@ -35,8 +65,8 @@ main {
     transform: scale(1.05);
 }
 
-.container>* {
-    background-color: white;
+.container > * {
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
     font-weight: bold;
     width: 100%;
@@ -110,8 +140,7 @@ main {
 }
 
 #container-15final .txartel {
-    background-color: rgb(255, 255, 198);
-
+    background-color: rgba(255, 255, 198, 0.8);
 }
 
 p{
