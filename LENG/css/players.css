@@ -80,7 +80,7 @@ h4 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 35px solid black;
+    border: 1 solid black;
     display: block;
 }
 
@@ -102,4 +102,6 @@ button {
     font-size: 14px;
     border-radius: 4px;
     color: blue;
+    margin-top: 50px;
+    display: flex;
 }
