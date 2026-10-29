@@ -9,6 +9,11 @@
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
+#hemen {
+    color: #810d0d;
+    font-weight: bold;
+}
+
 .logoa {
     width: 20%;
     display: flex;

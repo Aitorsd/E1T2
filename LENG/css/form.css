@@ -9,51 +9,6 @@ h4 {
     text-align: justify;
 }
 
-/*HEADER*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #dfdfdf;
-    padding: 15px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-}
-
-.logoa {
-    width: 20%;
-    display: flex;
-    align-items: center;
-}
-
-.logoa img {
-    padding-left: 15px;
-    width: 280px;
-    height: auto;
-}
-
-.nabegatzailea {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 60px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-right: 15px;
-}
-
-.nabegatzailea > a {
-    margin: 20px;
-    text-decoration: none;
-    color: #c51818;
-    align-items: center;
-    transition: color 0.5s ease;
-}
-
-.nabegatzailea > a:hover {
-    color: #0a0909;
-}
 
 /*MAIN*/
 
@@ -86,11 +41,6 @@ h1 {
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
-hr{
-    margin-left: 5%;
-    margin-right: 5%;
-    color: white;
-}
 
 fieldset {
     border: 5px solid black;

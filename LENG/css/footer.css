@@ -32,8 +32,8 @@ footer > div {
 }
 
 .saresozialak img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     object-fit: contain;
     object-fit: cover;
     transition: transform 0.3s ease;
