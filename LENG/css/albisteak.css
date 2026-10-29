@@ -10,46 +10,11 @@
      color: white;
  }
 
-
- .goiburua {
-     background-color: #202020;
-     padding: 20px;
-     border-bottom: 3px solid #e31837;
-
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     align-items: center;
- }
-
- .goiburua h1 {
-     color: #e31837;
- }
-
-
- .goiburua ul {
-     list-style: none;
-
-     display: grid;
-     grid-template-columns: repeat(4, 1fr);
-     gap: 20px;
- }
-
- .goiburua a {
-     color: white;
-     text-decoration: none;
- }
-
- .goiburua a:hover {
-     color: #e31837;
- }
-
-
  .edukiontzia {
      width: 90%;
      max-width: 1100px;
      margin: 40px auto;
  }
-
 
  .sarrera {
      margin-bottom: 30px;
@@ -59,7 +24,6 @@
      font-size: 32px;
      margin-bottom: 10px;
  }
-
 
  .albiste-nagusia {
      display: grid;
@@ -79,7 +43,6 @@
      min-height: 300px;
      object-fit: cover;
  }
-
 
  .albiste-edukia {
      padding: 20px;
