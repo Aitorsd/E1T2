@@ -22,31 +22,12 @@ main {
     box-sizing: border-box;
     padding: 20px;
     background-color: #ebebeb;
-    background-image: url('../asset/fondo.gif');
+    background-image: url('../asset/fondo.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
-
-
     background-attachment: fixed;
     overflow: hidden;
-}
-
-
-/*GIF OSCURO???*/
-
-main::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.38);
-    z-index: 0;
-}
-
-main * {
-    position: relative;
-    z-index: 1;
 }
 
 
@@ -66,7 +47,7 @@ main * {
 }
 
 .container > * {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6);
     color: black;
     font-weight: bold;
     width: 100%;
@@ -140,7 +121,7 @@ main * {
 }
 
 #container-15final .txartel {
-    background-color: rgba(255, 255, 198, 0.8);
+    background-color: rgba(255, 255, 198, 0.6);
 }
 
 p{
