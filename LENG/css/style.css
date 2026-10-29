@@ -31,7 +31,7 @@ aside {
     margin-left: 25px;
     margin-right: 5px;
     border: 5px solid #dddddd;
-    
+
 }
 
 aside h1 {
@@ -97,10 +97,10 @@ section {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #ebebeb;
-    
+
 }
 
-section > div {
+section>div {
     background-color: white;
     border-radius: 50px;
     margin: 25px;
@@ -114,7 +114,7 @@ section > div {
     padding-left: 15px;
     padding-right: 15px;
     height: auto;
-    
+
 }
 
 iframe {

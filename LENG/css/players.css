@@ -76,9 +76,7 @@ h4 {
     border-radius: 0 0 10px 10px;
 }
 
--------------
-
-.jokalari img {
+------------- .jokalari img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -86,9 +84,7 @@ h4 {
     display: block;
 }
 
-------------
-
-.textua h1 {
+------------ .textua h1 {
     display: flex;
     align-items: flex-start;
 }
