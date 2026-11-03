@@ -71,14 +71,19 @@ aside h3 {
 }
 
 aside button {
-    background-color: #ebebeb;
-    color: black;
-    font-weight: bold;
     width: 100%;
+    height: 30px;
+    background: #c2c2c2;
+    border: none;
+    color: #ffffff;
     text-align: center;
+    font-weight: 600;
     border-radius: 35px;
     font-size: 17px;
-    margin-top: 15px;
+    margin-top: 5px;
+
+
+   
 }
 
 aside button a,
@@ -169,7 +174,19 @@ iframe {
 }
 
 .botoiak button {
-    width: 45%;
+    width: 80%;
+    background: #c2c2c2;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -8px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 button {
@@ -180,7 +197,8 @@ button:hover {
     transform: scale(1.05);
 }
 
-/***********************************COOKIES***********************************/
+/*COOKIES*/
+
 .aviso-cookies {
     z-index: 100;
     display: none;
@@ -196,7 +214,7 @@ button:hover {
     width: calc(100% - 40px);
     max-width: 300px;
     line-height: 150%;
-    border-radius: 16px;
+    border-radius: 35px;
     position: fixed;
     bottom: 70px;
     left: 20px;
@@ -250,7 +268,7 @@ button:hover {
     font-weight: 700;
     cursor: pointer;
     transition: .3s ease all;
-    border-radius: 5px;
+    border-radius: 25px;
     margin-bottom: 15px;
     font-size: 14px;
 }
