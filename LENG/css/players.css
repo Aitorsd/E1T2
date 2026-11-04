@@ -1,107 +1,86 @@
 body {
-    margin: 0px;
-}
-
-h4 {
-    font-size: 20px;
+    flex-direction: row;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    font-weight: normal;
-    text-align: justify;
+    background-image: url('../asset/fondopantaila.avif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
-/*MAIN*/
+header, footer {
+    margin: -10px;
+}
 
-.textua {
+footer {
+    margin-top: 20px;
+}
+
+main {
+    flex-direction: row;
+}
+
+.jokalariak {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+.txartel {
+    background-color: grey;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    max-width: 600px;
+    margin: 5px;
     padding: 15px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    width: 20%;
+    border-radius: 50px;
 }
 
-.irudiak img {
-    width: 196px;
-    border: 2px solid black;
-    align-items: flex-end;
-    border-radius: 10px 10px 0 0;
-}
 
-.irudiak {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 6%;
-}
-
-.jokalari {
+.contenedor-irudi {
     position: relative;
-    width: 200px;
-    height: 200px;
-    background-color: white;
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 
-.testua {
-    position: absolute;
-    bottom: 1;
-    left: 0;
-    right: 0;
-    background: grey;
-    color: white;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    font-size: 11px;
-    font-style: italic;
-    text-align: center;
-    padding: 11px 9px;
-    box-sizing: border-box;
-    opacity: 95%;
-}
 
-.Izen {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #444444;
-    color: white;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    font-size: 25px;
-    text-align: center;
-    padding: 2px 1px;
-    box-sizing: border-box;
-    opacity: 95%;
-    border-radius: 0 0 10px 10px;
-}
-
-.jokalari img {
+.irudi {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1 solid black;
+    border-radius: 35px;
     display: block;
 }
 
-.textua h1 {
+
+.izen {
+    background-color: rgba(255, 255, 255, 0.76);
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 0px 35px 0px 35px;
+
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 0px 40px 0px 40px;
+
+
+
+    z-index: 1;
+
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.botoi {
+.testua {
+    background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-button {
-    padding: 8px 16px;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    font-size: 14px;
-    border-radius: 4px;
-    color: blue;
-    margin-top: 50px;
-    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    margin-top: 15px;
+    min-height: 150px;
+    padding: 15px;
+    font-size: 18px;
 }
