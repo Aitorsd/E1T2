@@ -283,19 +283,6 @@ button:hover {
     font-size: 14px;
 }
 
-.aviso-cookies .boton:hover {
-    background: #000;
-}
-
-.aviso-cookies .enlace {
-    color: #c51818;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.aviso-cookies .enlace:hover {
-    text-decoration: underline;
-}
 
 .fondo-aviso-cookies {
     display: none;
@@ -319,104 +306,13 @@ button:hover {
 .fondo-aviso-cookies.activo {
     display: block;
 }
-
-body.ck.av {
-    background: #f2f2f2;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/* fin cookies */   
-
-/*Cookies aviso*/
-
-body.cookies {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    margin-top: 5%;
-    margin-bottom: 7%;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.container1 {
-    padding: 10%;
-    max-width: 1100px;
-    margin: 20px auto;
-    margin-bottom: 10%;
-    padding: 20px;
-    margin-top: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-}
-
-.container1 h2 {
-    color: #4286e0;
-}
-
-
-.container1 p {
-    line-height: 1.6;
-}
-
-.container1 ul {
-    margin-left: 20px;
-}
-
-footer.ck {
-    text-align: center;
-    background-color: #7e867e;
-    color: white;
-    width: 100%;
-    z-index: 1;
-    margin-top: 10px;
-    position: fixed;
-    /* Fijo en la página */
-    bottom: 0;
-    /* Siempre en la parte inferior */
-    left: 0;
-    width: 100%;
-    background-color: #5a5757;
-    /* Color de fondo del footer */
-    color: white;
-    /* Color del texto */
-    text-align: center;
-    /* Centrar el texto */
-    padding: 7px 0;
-    /* Espacio interno en la parte superior e inferior */
-    font-size: 14px;
-    /* Tamaño de la fuente */
-    z-index: 100;
-}
-
-.btn-index {
-    background-color: #4286e0;
-    /* Color de fondo verde */
-    color: white;
-    /* Color del texto */
-    padding: 10px 20px;
-    /* Espaciado interno */
-    border: none;
-    /* Sin bordes */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    cursor: pointer;
-    /* Cambia el cursor cuando pasas sobre el botón */
-    font-size: 16px;
-    /* Tamaño del texto */
+.linkC {
+    color: #c51818;
     text-decoration: none;
-    /* Quita el subrayado del enlace */
-    display: inline-block;
-    /* Permite que el botón se comporte como un botón real */
+    font-size: 14px;
 }
-
-/* Estilo para cuando se pasa el ratón por encima */
-.btn-index:hover {
-    background-color: #1162cc;
-    /* Color más oscuro al pasar el ratón */
+.linkC:hover {
+color: #000;
 }
-
 
 /***********************************FIN COOKIES***********************************/

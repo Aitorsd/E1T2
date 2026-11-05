@@ -1,0 +1,59 @@
+
+.cookies {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    background-color: #000;
+    color: #333;
+}
+
+.containerCookies {
+    padding: 10%;
+    max-width: 1100px;
+    margin: 20px auto;
+    margin-bottom: 10%;
+    padding: 20px;
+    margin-top: 10%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.containerCookies h2 {
+    color: #c51818;
+}
+
+
+.containerCookies p {
+    line-height: 1.6;
+}
+
+.containerCookies ul {
+    margin-left: 20px;
+}
+
+
+.btn-index {
+    background-color: #c51818;
+
+    color: white;
+
+    padding: 10px 20px;
+ 
+    border: none;
+
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilo para cuando se pasa el ratón por encima */
+.btn-index:hover {
+    background-color: #fff;
+    color: #c51818;
+}
+
