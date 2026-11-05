@@ -2,10 +2,10 @@ body {
     flex-direction: row;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     background-image: url('../asset/fondopantaila.avif');
-    background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    
 }
+
 
 header, footer {
     margin: -10px;
@@ -34,7 +34,13 @@ main {
     padding: 15px;
     width: 20%;
     border-radius: 50px;
+    transition: transform 0.5s ease;
 }
+
+.txartel:hover {
+    transform: scale(1.05);
+}
+
 
 
 .contenedor-irudi {
