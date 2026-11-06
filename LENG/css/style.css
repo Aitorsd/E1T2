@@ -226,7 +226,7 @@ button:hover {
     line-height: 150%;
     border-radius: 35px;
     position: fixed;
-    bottom: 70px;
+    bottom: 20px;
     left: 20px;
     
     /* Borde fino translúcido para dar efecto de relieve/cristal */
