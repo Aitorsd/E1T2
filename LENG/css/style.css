@@ -65,7 +65,7 @@ aside h3 {
 }
 
 .berriakaside div {
-    background-color: white;
+    background-color: #ebebeb
     border-radius: 50px;
     margin: 15px;
 }
@@ -77,18 +77,17 @@ aside h3 {
 }
 
 aside button {
+    
     width: 100%;
-    height: 30px;
-    background: #c2c2c2;
-    border: none;
-    color: #ffffff;
+    background: #ebebeb;
+    border: 3px solid #000000;
+    color: #000000;
     text-align: center;
+    padding: 10px;
     font-weight: 600;
-    border-radius: 35px;
-    font-size: 17px;
-    margin-top: 5px;
-
-
+    border-radius: 45px;
+    font-size: 15px;
+    transition: transform 0.3s ease;
    
 }
 

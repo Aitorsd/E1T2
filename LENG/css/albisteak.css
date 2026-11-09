@@ -6,8 +6,8 @@
 
  body {
      font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-     background-color: #111;
-     color: white;
+     background-color: #ebebeb;
+     color: #ffffffeb;
  }
 
  .edukiontzia {
@@ -29,8 +29,8 @@
      display: grid;
      grid-template-columns: 1.2fr 1fr;
 
-     background-color: #222;
-     border: 2px solid #e31837;
+     background-color: white;
+     border: 2px solid #dddddd;
      border-radius: 10px;
      overflow: hidden;
 
@@ -72,8 +72,8 @@
      display: grid;
      grid-template-columns: 1fr 1.2fr;
 
-     background-color: #222;
-     border: 2px solid #e31837;
+     background-color: #cfcece;
+     border: 2px solid #dddddd;
      border-radius: 10px;
      overflow: hidden;
 
@@ -98,7 +98,7 @@
  }
 
  .albistea {
-     background-color: #222;
+     background-color: #ebebeb;
      border-radius: 10px;
      overflow: hidden;
  }
@@ -115,7 +115,7 @@
      padding: 10px;
 
      background-color: #e31837;
-     color: white;
+     color: black;
      text-decoration: none;
      border-radius: 5px;
  }
@@ -126,7 +126,7 @@
 
 
  .oina {
-     background-color: #202020;
+     background-color: #ebebeb;
      text-align: center;
      padding: 20px;
      margin-top: 40px;

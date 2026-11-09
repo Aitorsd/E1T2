@@ -21,7 +21,6 @@ main {
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 5%;
-    
 
 }
 
@@ -65,7 +64,7 @@ fieldset {
 input {
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     font-size: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     
 }
 
@@ -74,6 +73,34 @@ input {
     display: flex;
 }
 
-.email {
+#izen, #abizen {
+    width: 95%;
+}
+
+#email {
+   width: 98%;
    
+}
+
+input[type="checkbox"] {
+    
+   
+}
+
+
+input[type="submit"] {
+    width: 30%;
+    background: #ffffff;
+    border: 3px solid #000000;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 45px;
+    font-size: 15px;
+    transition: transform 0.5s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
 }
