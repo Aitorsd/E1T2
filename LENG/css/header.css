@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+
 .header-bilatzailea {
     display: flex;
     justify-content: space-between;
@@ -7,8 +8,10 @@
     background-color: #ebebeb;
     padding: 15px;
     width: 100%;
+    height: auto;
     box-sizing: border-box;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    
 }
 
 #hemen {
