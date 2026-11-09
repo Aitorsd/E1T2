@@ -4,11 +4,11 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
 h4 {
-    font-size: 20px;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    font-size: 20px; 
     font-weight: normal;
     text-align: justify;
 }
@@ -40,11 +40,16 @@ e {
 
 textarea {
     resize: none;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid black;
 }
 
-h1 {
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-}
 
 
 fieldset {
@@ -56,12 +61,6 @@ fieldset {
     background-color: #dfdfdf;
 }
 
-textarea {
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 3px solid black;
-}
 
 input {
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
@@ -73,4 +72,8 @@ input {
 .newsletterlabel,
 .newsletter {
     display: flex;
+}
+
+.email {
+   
 }

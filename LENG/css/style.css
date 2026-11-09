@@ -5,11 +5,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    
 }
 
 .testua h4 {
     font-size: 17px;
 
+}
+
+main {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 /*MAIN (ASIDE)*/
@@ -130,6 +136,7 @@ iframe {
     width: 50%;
     height: 100%;
     margin-right: 15px;
+    margin-left: 15px;
     text-align: row;
     flex-direction: column;
     justify-content: space-between;
@@ -190,11 +197,12 @@ iframe {
     font-size: 20px;
 }
 
-.botoiak img {
+.klasifikazioa img {
     width: 60px;
     height: auto;
     margin: 0px;
 }
+
 
 button {
     transition: transform 0.3s ease;
@@ -203,6 +211,7 @@ button {
 button:hover {
     transform: scale(1.05);
 }
+
 
 
 

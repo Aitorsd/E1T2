@@ -3,11 +3,12 @@ body {
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
     background-image: url('../asset/fondopantaila.avif');
     background-position: center center;
-    
+
 }
 
 
-header, footer {
+header,
+footer {
     margin: -10px;
 }
 
@@ -16,7 +17,9 @@ footer {
 }
 
 main {
-    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 .jokalariak {
@@ -60,7 +63,7 @@ main {
 
 
 .izen {
-    background-color: rgba(255, 255, 255, 0.76);
+    background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
     border-radius: 0px 35px 0px 35px;
@@ -89,4 +92,39 @@ main {
     min-height: 150px;
     padding: 15px;
     font-size: 18px;
+}
+
+button {
+    width: 30%;
+    background: #ffffff;
+    border: 3px solid #000000;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 45px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+}
+
+button a{
+    text-decoration: none;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.botoi {
+    display: flex;
+    justify-content: center;
+}
+
+#larrusea p {
+    margin: 5px;
 }

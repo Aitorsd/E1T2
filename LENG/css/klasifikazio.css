@@ -28,7 +28,10 @@ main {
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
+
 
 
 /*MAIN*/
