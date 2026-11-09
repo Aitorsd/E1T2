@@ -68,8 +68,14 @@
     margin: 0px;
 }
 
-------------------------- body {
-    margin: 0px;
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 h1,
