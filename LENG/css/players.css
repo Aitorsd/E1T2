@@ -1,3 +1,4 @@
+
 body {
     flex-direction: row;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
@@ -7,10 +8,7 @@ body {
 }
 
 
-header,
-footer {
-    margin: -10px;
-}
+
 
 footer {
     margin-top: 20px;

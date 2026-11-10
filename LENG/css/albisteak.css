@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
@@ -134,10 +130,3 @@ main {
     background-color: #b5122b;
 }
 
-
-.oina {
-    background-color: #ebebeb;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
