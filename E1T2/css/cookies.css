@@ -1,0 +1,51 @@
+
+body {
+    margin: 0px;
+    background-image: url('../asset/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+}
+
+/*MAIN*/
+
+main {
+    margin-top: 1fr;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 1fr;
+
+}
+
+
+fieldset {
+    border: 5px solid black;
+    border-radius: 35px;
+    padding: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+legend{
+    margin-bottom:-3em;
+}
+
+.btn-index {
+    background-color: #c51818;
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilo para cuando se pasa el ratón por encima */
+.btn-index:hover {
+    background-color: #fff;
+    color: #c51818;
+}

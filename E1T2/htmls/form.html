@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gamestop formulario</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="image/x-icon" href="../asset/logo.png">
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header-bilatzailea">
+            <div class="logoa"><a href="../index.html"><img src="../asset/izen-logo.png"></a></div>
+            <div class="nabegatzailea">
+                <a href="../htmls/jokalariak.html">
+                    <h2>JOKALARIAK</h2>
+                </a>
+                <a href="../htmls/albisteak.html">
+                    <h2>BERRIAK</h2>
+                </a>
+                <a href="../htmls/clasifikazio.html">
+                    <h2>SAILKAPENA</h2>
+                </a>
+            </div>
+        </div>
+        <hr class="nabegatzaile-lerroa">
+    </header>
+
+    <main>
+
+        <form>
+            <fieldset>
+                <legend>
+                    <h1>Harremanetarako formularioa</h1>
+                </legend>
+                <div class="izenabizen">
+                    <div class="izen">
+                        <label for="izen">
+                            <h4>Izena:<e> *</e>
+                            </h4>
+                        </label>
+
+                        <input type="text" required id="izen" name="izen" placeholder="Izena">
+                    </div>
+
+                    <br>
+
+                    <div class="abizen">
+                        <label for="abizen">
+                            <h4>Abizena:<e> *</e>
+                            </h4>
+                        </label>
+
+                        <input type="text" required id="abizen" name="abizen" placeholder="Abizena">
+                    </div>
+                </div>
+
+                <br>
+
+                <label for="email">
+                    <h4>Email helbidea:<e> *</e>
+                    </h4>
+                </label>
+
+                <input type="email" id="email" required name="email" placeholder="eredu@email.com">
+
+
+                <label for="kontaktu">
+                    <h4>Kontaktuaren zergatik:<e> *</e>
+                    </h4>
+                </label>
+
+                <textarea id="kontaktu" required name="kontaktu" rows="7" cols="99%"></textarea>
+
+                <hr>
+                <label for="comentarioak">
+                    <h4>Komentarioa:</h4>
+                </label>
+                <textarea id="comentarioak" name="comentarioak" rows="7" cols="99%"></textarea>
+
+                <label for="newsletter" class="newsletterlabel">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="Bai" class="newsletter">
+                    <h4>Newsletter-era harpidetu</h4>
+                </label>
+
+
+                <input type="submit" value="Bidali formularioa">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <hr class="nabegatzaile-lerroa">
+        <div class="footer-bilatzailea">
+            <div class="logoafooter"><img src="../asset/logo.png" alt="Logo de GameStop"></div>
+            <div class="informazioafooter">
+                <p>
+                <h2>© 1999-2026 GameStop™ eta AIA S.A.™</h2>
+                </p>
+            </div>
+            <div class="saresozialak">
+                <a href="https://www.instagram.com/gamestop"><img src="../asset/iglogo.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/GameStop/"><img src="../asset/facebooklogo.png" alt="Facebook"></a>
+                <a href="https://x.com/GameStop"><img src="../asset/xlogo.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/channel/UCX1aoT25QZzgGQJo4uCtRxw"><img src="../asset/ytlogo.png"
+                        alt="YouTube"></a>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+/* =====================================================================
+   RESET
+   ===================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    background-image: url('../asset/fondopantaila.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+/* =====================================================================
+   BASE (MÓVIL): todo en una columna
+   ===================================================================== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+    background-color: #ebebeb;
+}
+
+/* ---------- ASIDE ---------- */
+aside {
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid #dddddd;
+}
+
+aside h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+aside h3 {
+    text-align: center;
+    font-size: 1.0625rem;
+    margin: 0.313rem 10px 10px;
+}
+
+aside hr {
+    margin: 0 15px;
+}
+
+.berriakaside {
+    width: 100%;
+}
+
+.berriakaside > div {
+    display: flex;
+    flex-direction: column; /* así el botón siempre queda abajo, aunque cambie la altura de la foto */
+    background-color: #ebebeb;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.berriakaside > div img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+}
+
+.mapa {
+    display: block;
+    width: calc(100% - 30px);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    margin: 0 15px 15px;
+    border: 0;
+    border-radius: 35px;
+}
+
+/* ---------- BOTONES (son <a> con aspecto de botón: toda la superficie es clicable) ---------- */
+.botoia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    min-height: 44px;
+    margin: auto auto 15px; /* margin-top:auto empuja el botón al fondo de la tarjeta */
+    padding: 12px;
+    background: #ebebeb;
+    border: 3px solid #000000;
+    border-radius: 45px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.botoia:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
+/* ---------- SECTION (contenido) ---------- */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    /* Permite que las tarjetas cambien de layout según el ANCHO DE SU CONTENEDOR
+       (container query), no solo según el ancho de la pantalla */
+    container-type: inline-size;
+}
+
+section > div {
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid #dddddd;
+    overflow: hidden;
+}
+
+/* Tarjetas de contenido: en móvil, imagen/vídeo arriba y texto abajo */
+.azkenberria,
+.informazioa {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 15px;
+}
+
+.bideoa {
+    width: 100%;
+    min-width: 0;
+}
+
+.bideoa img,
+.bideoa iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: clamp(18px, 4vw, 35px);
+}
+
+.bideoa iframe {
+    aspect-ratio: 16 / 9;
+}
+
+.testua {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word; /* evita que palabras largas (euskera) rompan el ancho */
+}
+
+.testua h1 {
+    font-size: clamp(1.375rem, 4.5vw, 2rem);
+    line-height: 1.2;
+}
+
+.testua p {
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    font-weight: bold; /* antes era <h4>, que es negrita por defecto */
+}
+
+.botoiak {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.botoiak .botoia {
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+    font-size: clamp(1rem, 4vw, 1.25rem);
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+/* El efecto hover solo en dispositivos con ratón (en táctil se queda "pegado") */
+@media (hover: hover) {
+    .botoia:hover,
+    button:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* =====================================================================
+   COOKIES
+   ===================================================================== */
+.aviso-cookies {
+    z-index: 100;
+    display: none;
+    background: rgba(255, 255, 255, 0.65);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.aviso-cookies .galleta {
+    max-width: 100px;
+    position: absolute;
+    top: -78px;
+    left: calc(50% - 50px);
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+.aviso-cookies .titulo {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.aviso-cookies .parrafo {
+    color: #333333;
+    font-weight: 500;
+}
+
+.aviso-cookies.activo {
+    display: block;
+}
+
+.aviso-cookies .boton {
+    width: 100%;
+    background: #595959;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.fondo-aviso-cookies {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+.fondo-aviso-cookies.activo {
+    display: block;
+}
+
+.linkC {
+    color: #c51818;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.linkC:hover {
+    color: #000;
+}
+
+/* =====================================================================
+   MÓVIL GRANDE / TABLET PEQUEÑA  (≥ 600px)
+   ===================================================================== */
+@media (min-width: 600px) {
+    main {
+        padding: 20px;
+    }
+
+    .botoiak .botoia {
+        width: auto;
+        flex: 1 1 200px;
+    }
+}
+
+/* =====================================================================
+   TABLET  (768px – 1199px): aside a todo el ancho, con las 2 noticias en paralelo
+   ===================================================================== */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .berriakaside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mapa {
+        aspect-ratio: 16 / 7;
+    }
+}
+
+/* =====================================================================
+   ESCRITORIO  (≥ 1200px): aside a la izquierda, contenido a la derecha
+   ===================================================================== */
+@media (min-width: 1200px) {
+    body {
+        background-attachment: fixed;
+    }
+
+    main {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 25px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
+    aside {
+        flex: 0 0 30%;
+        width: 30%;
+        min-width: 280px;
+        border-radius: 45px;
+    }
+
+    section {
+        gap: 25px;
+    }
+
+    section > div {
+        border-radius: 50px;
+    }
+}
+
+/* =====================================================================
+   CONTAINER QUERY: cuando la sección es lo bastante ancha, texto e imagen/vídeo
+   pasan a ir lado a lado. Funciona igual en tablet que en escritorio.
+   ===================================================================== */
+@container (min-width: 720px) {
+    .azkenberria,
+    .informazioa {
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .bideoa,
+    .testua {
+        flex: 1 1 0;
+        width: auto;
+        min-width: 0;
+    }
+
+    .botoiak .botoia {
+        flex: 0 1 auto;
+        min-width: 160px;
+    }
+}
+
+/* =====================================================================
+   MENÚ DESPLEGABLE (hamburguesa)
+   Por debajo de 992px el header de escritorio se oculta y lo sustituyen
+   la barra superior (.barra-movil) y el panel lateral (.container-menu).
+   Para cambiar el punto de cambio, modifica 992px / 991px en las 2 reglas
+   @media de este bloque.
+   ===================================================================== */
+
+/* El checkbox es solo el "interruptor": se maneja con los <label for="btn-menu"> */
+#btn-menu {
+    display: none;
+}
+
+/* Barra superior: oculta por defecto (escritorio) */
+.barra-movil {
+    display: none;
+}
+
+/* Fondo oscuro + panel lateral */
+.container-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 110;           /* por encima del aviso de cookies (100) */
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Al pulsar el fondo oscuro, se cierra el menú */
+.menu-fondo {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+.cont-menu {
+    position: relative;
+    z-index: 1;
+    width: min(280px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    background: #5a5757;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0);
+}
+
+.cont-menu nav {
+    padding-top: 70px;
+}
+
+.cont-menu ul {
+    list-style: none;
+}
+
+.cont-menu nav a {
+    display: block;
+    padding: 18px 20px;
+    color: #c7c7c7;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cont-menu nav a:hover,
+.cont-menu nav a:focus-visible {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #c7c7c7;
+}
+
+.cerrar-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Con el menú abierto, la página de detrás no hace scroll */
+body:has(#btn-menu:checked) {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    /* body > header (más específico) para ganar a lo que ponga header.css */
+    body > header {
+        display: none;
+    }
+
+    .barra-movil {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 90;
+        height: 64px;
+        padding: 0 12px;
+        background: #5a5757;
+    }
+
+    .barra-movil label {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .barra-movil img {
+        display: block;
+        height: 40px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Si se abre el menú y luego se agranda la ventana, que no se quede colgado */
+    .container-menu {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container-menu,
+    .cont-menu {
+        transition: none;
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+.header-bilatzailea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ebebeb;
+    padding: 5px;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    
+}
+
+#hemen {
+    color: #810d0d;
+    font-weight: bold;
+}
+
+.logoa {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logoa img {
+    padding-left: 15px;
+    width: 280px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logoa img:hover {
+    transform: scale(1.05);
+}
+
+.nabegatzailea {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 15px;
+    height: 90%;
+    border: 5px solid #dddddd;
+}
+
+.nabegatzailea a {
+    margin: 20px;
+    text-decoration: none;
+    color: #c51818;
+    align-items: center;
+    transition: color 1.5s ease;
+    transition: transform 0.3s ease;
+}
+
+.nabegatzailea>a:hover {
+    color: #851212;
+    transform: scale(1.03);
+}
+
+.nabegatzaile-lerroa {
+    width: 100%;
+    height: 15px;
+    background-color: #ff5757;
+    margin: 0px;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
