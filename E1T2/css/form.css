@@ -1,6 +1,4 @@
-/* =====================================================================
-   RESET
-   ===================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,13 +27,11 @@ img {
     max-width: 100%;
 }
 
-/* =====================================================================
-   MAIN (MÓVIL)
-   ===================================================================== */
+
 main {
-    flex: 1;                /* el footer queda abajo aunque haya poco contenido */
+    flex: 1;                
     width: 100%;
-    max-width: 900px;       /* en pantallas grandes no se estira de más */
+    max-width: 900px;       
     margin: 0 auto;
     padding: 24px 12px;
 }
@@ -48,7 +44,7 @@ fieldset {
     border-radius: 25px;
     padding: 16px;
     background-color: #dfdfdf;
-    min-width: 0;           /* sin esto, un fieldset no encoge por debajo de su contenido */
+    min-width: 0;           
 }
 
 legend {
@@ -60,7 +56,7 @@ legend h1 {
     line-height: 1.2;
 }
 
-/* Cada pareja etiqueta + campo */
+
 .eremua {
     display: flex;
     flex-direction: column;
@@ -72,26 +68,26 @@ label {
     font-size: clamp(1.05rem, 4vw, 1.25rem);
 }
 
-/* El asterisco de "obligatorio" (antes era <e>, que no existe en HTML) */
+
 .derrigorra {
     color: red;
 }
 
-/* Nombre y apellido: uno debajo del otro en móvil */
+
 .izenabizen {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-/* Campos de texto: siempre al 100% de su caja */
+
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
     padding: 10px 16px;
     font-family: inherit;
-    font-size: 16px;        /* 16px mínimo: con menos, iPhone hace zoom al tocar el campo */
+    font-size: 16px;        
     border: 3px solid black;
     border-radius: 25px;
     background: #ffffff;
@@ -105,7 +101,7 @@ textarea:focus {
 }
 
 textarea {
-    resize: vertical;       /* solo hacia abajo: nunca rompe el ancho */
+    resize: vertical;      
     min-height: 160px;
 }
 
@@ -114,7 +110,7 @@ hr {
     border-top: 2px solid #b5b5b5;
 }
 
-/* Newsletter: casilla y texto alineados */
+
 .newsletterlabel {
     display: flex;
     align-items: center;
@@ -151,16 +147,14 @@ input[type="submit"]:focus-visible {
     outline-offset: 3px;
 }
 
-/* Hover solo con ratón (en táctil se queda "pegado") */
+
 @media (hover: hover) {
     input[type="submit"]:hover {
         transform: scale(1.05);
     }
 }
 
-/* =====================================================================
-   TABLET (≥ 600px): nombre y apellido lado a lado
-   ===================================================================== */
+
 @media (min-width: 600px) {
     main {
         padding: 40px 24px;
@@ -193,9 +187,7 @@ input[type="submit"]:focus-visible {
     }
 }
 
-/* =====================================================================
-   ESCRITORIO (≥ 1200px)
-   ===================================================================== */
+
 @media (min-width: 1200px) {
     body {
         background-attachment: fixed;
@@ -210,29 +202,21 @@ input[type="submit"]:focus-visible {
     }
 }
 
-/* =====================================================================
-   MENÚ DESPLEGABLE (hamburguesa)
-   Por debajo de 992px el header de escritorio se oculta y lo sustituyen
-   la barra superior (.barra-movil) y el panel lateral (.container-menu).
-   Para cambiar el punto de cambio, modifica 992px / 991px en las 2 reglas
-   @media de este bloque.
-   ===================================================================== */
 
-/* El checkbox es solo el "interruptor": se maneja con los <label for="btn-menu"> */
 #btn-menu {
     display: none;
 }
 
-/* Barra superior: oculta por defecto (escritorio) */
+
 .barra-movil {
     display: none;
 }
 
-/* Fondo oscuro + panel lateral */
+
 .container-menu {
     position: fixed;
     inset: 0;
-    z-index: 110;           /* por encima del aviso de cookies (100) */
+    z-index: 110;           
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
@@ -244,7 +228,6 @@ input[type="submit"]:focus-visible {
     visibility: visible;
 }
 
-/* Al pulsar el fondo oscuro, se cierra el menú */
 .menu-fondo {
     position: absolute;
     inset: 0;
@@ -304,13 +287,13 @@ input[type="submit"]:focus-visible {
     cursor: pointer;
 }
 
-/* Con el menú abierto, la página de detrás no hace scroll */
+
 body:has(#btn-menu:checked) {
     overflow: hidden;
 }
 
 @media (max-width: 991px) {
-    /* body > header (más específico) para ganar a lo que ponga header.css */
+  
     body > header {
         display: none;
     }
@@ -347,7 +330,7 @@ body:has(#btn-menu:checked) {
 }
 
 @media (min-width: 992px) {
-    /* Si se abre el menú y luego se agranda la ventana, que no se quede colgado */
+ 
     .container-menu {
         display: none;
     }

@@ -1,6 +1,4 @@
-/* =====================================================================
-   RESET
-   ===================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,9 +23,7 @@ iframe {
     max-width: 100%;
 }
 
-/* =====================================================================
-   BASE (MÓVIL): todo en una columna
-   ===================================================================== */
+
 main {
     display: flex;
     flex-direction: column;
@@ -90,14 +86,14 @@ aside hr {
     border-radius: 35px;
 }
 
-/* ---------- BOTONES (son <a> con aspecto de botón: toda la superficie es clicable) ---------- */
+
 .botoia {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 80%;
     min-height: 44px;
-    margin: auto auto 15px; /* margin-top:auto empuja el botón al fondo de la tarjeta */
+    margin: auto auto 15px; 
     padding: 12px;
     background: #ebebeb;
     border: 3px solid #000000;
@@ -124,8 +120,7 @@ section {
     flex: 1;
     min-width: 0;
     width: 100%;
-    /* Permite que las tarjetas cambien de layout según el ANCHO DE SU CONTENEDOR
-       (container query), no solo según el ancho de la pantalla */
+
     container-type: inline-size;
 }
 
@@ -170,7 +165,7 @@ section > div {
     gap: 15px;
     width: 100%;
     min-width: 0;
-    overflow-wrap: break-word; /* evita que palabras largas (euskera) rompan el ancho */
+    overflow-wrap: break-word; 
 }
 
 .testua h1 {
@@ -181,7 +176,7 @@ section > div {
 .testua p {
     font-size: 1.0625rem;
     line-height: 1.5;
-    font-weight: bold; /* antes era <h4>, que es negrita por defecto */
+    font-weight: bold; 
 }
 
 .botoiak {
@@ -202,7 +197,7 @@ button {
     transition: transform 0.3s ease;
 }
 
-/* El efecto hover solo en dispositivos con ratón (en táctil se queda "pegado") */
+
 @media (hover: hover) {
     .botoia:hover,
     button:hover {
@@ -210,9 +205,7 @@ button {
     }
 }
 
-/* =====================================================================
-   COOKIES
-   ===================================================================== */
+
 .aviso-cookies {
     z-index: 100;
     display: none;
@@ -357,10 +350,7 @@ button {
     }
 }
 
-/* =====================================================================
-   CONTAINER QUERY: cuando la sección es lo bastante ancha, texto e imagen/vídeo
-   pasan a ir lado a lado. Funciona igual en tablet que en escritorio.
-   ===================================================================== */
+
 @container (min-width: 720px) {
     .azkenberria,
     .informazioa {
@@ -383,25 +373,16 @@ button {
     }
 }
 
-/* =====================================================================
-   MENÚ DESPLEGABLE (hamburguesa)
-   Por debajo de 992px el header de escritorio se oculta y lo sustituyen
-   la barra superior (.barra-movil) y el panel lateral (.container-menu).
-   Para cambiar el punto de cambio, modifica 992px / 991px en las 2 reglas
-   @media de este bloque.
-   ===================================================================== */
-
-/* El checkbox es solo el "interruptor": se maneja con los <label for="btn-menu"> */
 #btn-menu {
     display: none;
 }
 
-/* Barra superior: oculta por defecto (escritorio) */
+
 .barra-movil {
     display: none;
 }
 
-/* Fondo oscuro + panel lateral */
+
 .container-menu {
     position: fixed;
     inset: 0;
@@ -477,13 +458,13 @@ button {
     cursor: pointer;
 }
 
-/* Con el menú abierto, la página de detrás no hace scroll */
+
 body:has(#btn-menu:checked) {
     overflow: hidden;
 }
 
 @media (max-width: 991px) {
-    /* body > header (más específico) para ganar a lo que ponga header.css */
+   
     body > header {
         display: none;
     }
@@ -520,7 +501,7 @@ body:has(#btn-menu:checked) {
 }
 
 @media (min-width: 992px) {
-    /* Si se abre el menú y luego se agranda la ventana, que no se quede colgado */
+  
     .container-menu {
         display: none;
     }

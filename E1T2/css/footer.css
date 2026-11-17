@@ -1,6 +1,4 @@
-/* =====================================================================
-   FOOTER — compartido por index.html, cookies.html y form.html
-   ===================================================================== */
+
 
 /* ---------- BASE (MÓVIL): todo en columna y centrado ---------- */
 .footer-bilatzailea {
@@ -10,7 +8,6 @@
     align-items: center;
     gap: 12px;
     padding: 20px 15px;
-    /* sin height fija: la altura la decide el contenido, así nada se sale */
     background-color: #ebebeb;
     text-align: center;
 }
@@ -28,8 +25,6 @@
     width: 100%;
     min-width: 0;
 }
-
-/* El copyright: vale tanto si está en <p> como en <h2> (cada página lo tiene distinto) */
 .informazioafooter p,
 .informazioafooter h2 {
     margin: 0;
@@ -66,7 +61,6 @@
     border-radius: 8px;
 }
 
-/* Hover solo con ratón (en táctil se queda "pegado") */
 @media (hover: hover) {
     .saresozialak img:hover {
         transform: scale(1.15);
@@ -119,7 +113,7 @@
     }
 }
 
-/* ---------- ESCRITORIO (≥ 1200px): tamaños originales ---------- */
+
 @media (min-width: 1200px) {
     .logoafooter img {
         height: 100px;
