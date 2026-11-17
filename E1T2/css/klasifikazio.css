@@ -1,8 +1,8 @@
-
-
 body {
     margin: 0px;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
+    min-width: 1600px;
+    overflow: auto;
 }
 
 h4 {
@@ -12,7 +12,6 @@ h4 {
 }
 
 /*MAIN*/
-
 
 main {
     position: relative;
@@ -48,7 +47,7 @@ main {
 }
 
 
-.container > * {
+.container>* {
     background-color: rgba(255, 255, 255, 0.6);
     color: black;
     font-weight: bold;
@@ -126,7 +125,7 @@ main {
     background-color: rgba(255, 255, 198, 0.6);
 }
 
-p{
+p {
     font-size: 18px;
     margin-top: 15px;
     margin-bottom: 10px;
@@ -286,4 +285,70 @@ p{
 #container-29 {
     grid-column: 7;
     grid-row: 15 / 17;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        min-width: 1500px;
+        min-height: 1200px;
+        
+        grid-template-columns: repeat(7, 210px);
+        grid-template-rows: repeat(16, 75px);
+        
+        height: 65vh;
+        max-height: 65vh;
+        margin: 10px auto;
+    }
+
+    .container {
+        width: 210px;
+        height: 100%;
+    }
+
+
+    .header-bilatzailea {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .logoa {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logoa img {
+        width: 160px;
+        height: auto;
+        padding-left: 0;
+    }
+
+    .nabegatzailea {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 8px 5px;
+        justify-content: space-around;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .nabegatzailea a {
+        margin: 0px 4px;
+        text-align: center;
+    }
+
+    .nabegatzailea h2 {
+        font-size: 0.65rem;
+    }
+
+    #container-25 {
+        transform: translateY(15px);
+    }
 }
