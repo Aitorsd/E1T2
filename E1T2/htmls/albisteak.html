@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albisteak | GameStop E-Sports</title>
     <link rel="stylesheet" href="../css/albisteak.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -12,19 +13,44 @@
 </head>
 
 <body>
+    <input type="checkbox" id="btn-menu">
+
+    <div class="barra-movil">
+        <label for="btn-menu" aria-label="Menua ireki">☰</label>
+        <a href="../index.html"><img src="../asset/izen-logo.png" alt="GameStop"></a>
+    </div>
+
+    <div class="container-menu">
+        <label for="btn-menu" class="menu-fondo" aria-label="Menua itxi"></label>
+        <div class="cont-menu">
+            <label for="btn-menu" class="cerrar-menu" aria-label="Menua itxi">✕</label>
+            <nav aria-label="Menu nagusia">
+                <ul>
+                    <li><a href="../index.html">Hasiera</a></li>
+                    <li><a href="./Jokalariak-mini.html">Jokalariak</a></li>
+                    <li><a href="./albisteak.html">Berriak</a></li>
+                    <li><a href="./clasifikazio.html">Sailkapena</a></li>
+                    <li><a href="./form.html">Gurekin kontaktatu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
     <header>
         <div class="header-bilatzailea">
             <div class="logoa"><a href="../index.html"><img src="../asset/izen-logo.png"></a></div>
             <div class="nabegatzailea">
-                <a href="../htmls/Jokalariak.html">
+                <a href="./Jokalariak-mini.html">
                     <h2>JOKALARIAK</h2>
                 </a>
+                <a href="../htmls/albisteak.html">
+                    <h2 id="hemen">BERRIAK</h2>
                 </a>
                 <a href="../htmls/clasifikazio.html">
                     <h2>SAILKAPENA</h2>
                 </a>
                 <a href="../htmls/form.html">
-                    <h2 id="hemen">GUREKIN KONTAKTATU</h2>
+                    <h2>GUREKIN KONTAKTATU</h2>
                 </a>
             </div>
         </div>
@@ -34,69 +60,113 @@
     <main class="edukiontzia">
 
         <section class="albiste-nagusia">
-            <img src="../asset/albiste nagusia.jpg" alt="E-Sports txapelketa batean jolasten">
+            <img src="../asset/pepeberria.webp" alt="Azken berria">
 
             <div class="albiste-edukia">
-                <p class="etiketa">ALBISTE NABARMENA</p>
-                <p class="data">Data: ZEHAZTEKO</p>
+                <div class="albiste-burua">
+                    <h2>Peereira7-ren erremontada epikoa!</h2>
+                    <p class="data">10-11-2026</p>
+                </div>
 
-                <h2>Dena prest E-Sports txapelketarako</h2>
-
-                <p> GameStop Santurtziko dendak bideojokoen zaleak
-                    bilduko ditu e-sports txapelketa batean.
-                    Parte-hartzaileek beren trebetasunak erakusteko
-                    eta beste jokalariekin lehiatzeko aukera izango dute.
+                <p>
+                    Miraria ukitu zuen bihotzekoak jota, Peereira7 taldeak sailkapen historikoa lortu zuen
+                    kanporaketako azken segundoetan igoera epikoa eginda. Seriea ia galduta eta markagailua kontra
+                    zuela, eduki-sortzaileak ez zituen besoak jaitsi eta azken txisturako bost segundoren faltan gol
+                    erabakigarria sartzea lortu zuen, bere komunitatean eromena piztuz eta luzapen dramatikoa
+                    behartuz.
+                </p>
+                <p>
+                    Overtimean, tentsioa gora eta urrezko golaren araberako sailkapenarekin, Peereira7 odol hotza
+                    mantendu zuen behin betiko garaipenaren gola egiteko. Ahaztezina den balentria honekin,
+                    txapelketako hurrengo kanporaketarako txartela zigilatzen du, Rocket League-n partida ez dela
+                    amaitzen baloiak lurra ukitu arte erakutsiz.
                 </p>
 
-                <a href="txapelketa.html">txapelketari buruz gehiago</a>
+                <a href="./clasifikazio.html">Ikusi sailkapena</a>
             </div>
         </section>
 
         <article class="albiste-sarea">
-            <img src="../asset/izen-emateak.jpg" alt="Bideojokoetan parte hartzen">
+            <img src="../asset/lehiakideak.jpg" alt="Lehiakideak bideojoko txapelketa batean">
 
             <div class="albiste-edukia">
-                <p class="data">Data: ZEHAZTEKO</p>
-
-                <h3>Izen-emateak</h3>
+                <div class="albiste-burua">
+                    <h3>Laurdenetako kurtsoa ezarrita: lau norgehiagoka erabakigarri</h3>
+                    <p class="data">09-11-2026</p>
+                </div>
 
                 <p>
-                    Ezagutu txapelketan parte hartzeko
-                    baldintzak eta izena emateko modua.
+                    Zortzimilaren ostean, txapelketak zortzi jokalari ditu bizirik. Bihar jokatuko dira laurdenak:
+                    Vegetta777 eta Peereira7, Faker eta Ninja, Davo Xeneize eta RDJavi, eta AuronPlay eta R3gu3.
+                    Ezkerreko aldean, Vegetta777-k Willyrex garaitu du 7-5 eta Faker Rokko80-ren aurka nagusitu da 4-2.
+                    Eskuinekoan, Davo Xeneizek eta AuronPlayk ere txartela eskuratu dute, oso emaitza estuekin.
                 </p>
-                <a href="txapelketa.html">Informazio gehiago</a>
+                <p>
+                    Zaleek aurreikusten dute Faker eta Ninjaren arteko partida izango dela gehien kontatuko duena, bi
+                    jokalariek sekulako giroa pizten dutelako.
+                </p>
+                <a href="./clasifikazio.html">Ikusi sailkapena</a>
             </div>
         </article>
 
         <article class="albistea">
-            <img src="../asset/gaming-gunea.jpg" alt="Ordenagailuak dituen gaming gunea">
+            <img src="../asset/Jokalariak/rdjavi.png" alt="RDJavi">
 
             <div class="albiste-edukia">
-                <p class="data">Data: ZEHAZTEKO</p>
-                <h3>Gaming gunea prest dago</h3>
+                <div class="albiste-burua">
+                    <h3>RDJavik 6-1 menderatu du Alonsomanteca</h3>
+                    <p class="data">06-11-2026</p>
+                </div>
 
                 <p>
-                    Ezagutu txapelketa egingo den espazioa
-                    eta erabiliko diren ekipamenduak.
+                    RDJavik ez du zalantzarik utzi bigarren itzulian. 6-1 irabazi dio Alonsomantecari, eta lehen
+                    itzuliko 8-0 hura ez zela kasualitatea erakutsi du. Hasieratik markatu du erritmoa, eta
+                    Alonsomantecak ezin izan du erantzun.
+                </p>
+                <p>
+                    Beste aldetik, R3gu3k 4-0 garaitu du La Cobra, eta biak laurdenetarako sailkatu dira. Bi jokalariak
+                    txapelketako gogorrenen artean kokatu dira.
                 </p>
 
-                <a href="info.html">Ezagutu espazioa</a>
+                <a href="./clasifikazio.html">Ikusi sailkapena</a>
             </div>
         </article>
 
         <article class="albistea">
-            <img src="../asset/lehiakideak.jpg" alt="Bideojokoetan jolasten ari diren lehiakideak">
+            <img src="../asset/Jokalariak/ninja.avif" alt="Ninja">
 
             <div class="albiste-edukia">
-                <p class="data">Data: ZEHAZTEKO</p>
-
-                <h3>Lehiakideak ezagutzen</h3>
+                <div class="albiste-burua">
+                    <h3>Ninjak 8-1 eraman du Ibai: “Hurrengoan 90 minutu osoak jokatuko ditut”</h3>
+                    <p class="data">05-11-2026</p>
+                </div>
                 <p>
-                    Ezagutu txapelketan parte hartuko duten
-                    jokalariak eta haien esperientzia.
+                    Ninjak partida borobila egin du Ibairen aurka: 8-1. Ibaik gol bakarra sartu du, eta berehala aitortu
+                    du ez zela egun onean egon. Hala ere, umorea ez du galdu, eta hitzeman du hurrengo edizioan 90
+                    minutu osoko partida jokatuko duela.
+                </p>
+                <p>
+                    Ninjak, berriz, laurdenetarako txartela lortu du, eta Faker izango du aurkari.
                 </p>
 
-                <a href="players.html">Lehiakide guztiak</a>
+                <a href="./clasifikazio.html">Ikusi sailkapena</a>
+            </div>
+        </article>
+
+        <article class="albistea">
+            <img src="../asset/saria.png" alt="Txapelketako garaikurra">
+
+            <div class="albiste-edukia">
+                <div class="albiste-burua">
+                    <h3>Garaikurra oraindik erabakitzeke</h3>
+                    <p class="data">12-11-2026</p>
+                </div>
+                <p>
+                    Sailkapen-taulak bi finalerdi hauek jasotzen ditu: Peereira7-Ninja eta RDJavi-R3gu3.
+                    Bi markagailuak oraindik hutsik ageri dira, eta finalaren emaitza ere bete gabe dago;
+                    txapelduna, beraz, sailkapenean agertzeke dago.
+                </p>
+                <a href="./clasifikazio.html">Ikusi sailkapena</a>
             </div>
         </article>
 

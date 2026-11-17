@@ -14,11 +14,12 @@ footer {
 }
 
 main {
-    padding-top: 15px;
-    padding-left: 4%;
-    padding-right: 4%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: clamp(16px, 2vw, 25px);
+    padding: clamp(12px, 2.5vw, 30px);
     background-color: #ebebeb;
-
+    box-sizing: border-box;
 }
 
 .sarrera {
@@ -30,36 +31,89 @@ main {
     margin-bottom: 10px;
 }
 
-.albiste-nagusia {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-
+.albiste-nagusia,
+.albiste-sarea,
+.albistea {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding: 15px;
+    box-sizing: border-box;
     background-color: white;
     border: 5px solid #dddddd;
-    border-radius: 35px;
+    border-radius: 30px;
     overflow: hidden;
-
-    margin-bottom: 35px;
 }
 
-.albiste-nagusia img {
+.albiste-nagusia {
+    grid-column: 1 / -1;
+}
+
+.albiste-nagusia img,
+.albiste-sarea img,
+.albistea img {
+    display: block;
     width: 100%;
-    height: 100%;
-    min-height: 300px;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
+    border-radius: clamp(18px, 4vw, 35px);
 }
 
 .albiste-edukia {
-    padding: 20px;
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.albiste-burua {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.albiste-burua h2,
+.albiste-burua h3 {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.albiste-burua .data {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
 }
 
 .albiste-edukia h2,
 .albiste-edukia h3 {
-    margin: 10px 0;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.albiste-edukia h2 {
+    font-size: clamp(1.375rem, 4.5vw, 2rem);
+}
+
+.albiste-edukia h3 {
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
 }
 
 .albiste-edukia p {
-    line-height: 1.6;
+    margin: 0;
+    font-size: clamp(1rem, 1.2vw, 1.0625rem);
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+.albiste-edukia p:not(.etiketa):not(.data) {
+    text-align: justify;
 }
 
 .etiketa {
@@ -72,61 +126,77 @@ main {
     font-size: 14px;
 }
 
-
-.albiste-sarea {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-
-    background-color: white;
-    border: 5px solid #dddddd;
-    border-radius: 35px;
-    overflow: hidden;
-
-    margin-bottom: 20px;
-}
-
-.albiste-sarea img {
-    width: 100%;
-    height: 100%;
-    min-height: 250px;
-    object-fit: cover;
-
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.albiste-sarea .albiste-edukia {
-    padding: 20px;
-
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.albistea {
-    background-color: white;
-    border: 5px solid #dddddd;
-    border-radius: 35px;
-    overflow: hidden;
-}
-
-.albistea img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
 .albiste-edukia a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px;
-
-    background-color: #e31837;
-    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    width: 100%;
+    min-height: 44px;
+    margin-top: auto;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 45px;
+    color: #000000;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 35px;
+    transition: transform 0.3s ease;
 }
 
-.albiste-edukia a:hover {
-    background-color: #b5122b;
+.albiste-edukia a:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+}
+
+@media (hover: hover) {
+    .albiste-edukia a:hover {
+        transform: scale(1.02);
+    }
+}
+
+@media (min-width: 600px) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .albiste-nagusia {
+        flex-direction: row;
+        gap: 25px;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    .albiste-nagusia img {
+        flex: 0 1 42%;
+        width: 42%;
+        aspect-ratio: 4 / 3;
+    }
+
+    .albiste-nagusia .albiste-edukia {
+        width: auto;
+        align-self: stretch;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        gap: 25px;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+
+    .albiste-nagusia,
+    .albiste-sarea,
+    .albistea {
+        border-radius: 50px;
+    }
 }
 

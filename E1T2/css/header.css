@@ -78,6 +78,9 @@ footer {
 .nabegatzaile-lerroa {
     width: 100%;
     height: 15px;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
     background-color: #ff5757;
     margin: 0;
 }
@@ -277,4 +280,5 @@ body:has(#btn-menu:checked) {
     .container-menu,
     .cont-menu {
         transition: none;
-    }
+}
+}
