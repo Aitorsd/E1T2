@@ -63,7 +63,7 @@ aside hr {
 
 .berriakaside > div {
     display: flex;
-    flex-direction: column; /* así el botón siempre queda abajo, aunque cambie la altura de la foto */
+    flex-direction: column;
     background-color: #ebebeb;
     border-radius: 50px;
     margin: 15px;
@@ -105,6 +105,10 @@ aside hr {
     text-decoration: none;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.berriakaside .botoia {
+    background: #ffffff;
 }
 
 .botoia:focus-visible {
@@ -177,6 +181,7 @@ section > div {
     font-size: clamp(1rem, 1.2vw, 1.0625rem);
     line-height: 1.55;
     font-weight: 400;
+    text-align: justify;
 }
 
 .botoiak {
@@ -335,8 +340,8 @@ button {
     }
 
     aside {
-        flex: 0 0 30%;
-        width: 30%;
+        flex: 0 0 24%;
+        width: 24%;
         min-width: 280px;
         border-radius: 45px;
     }
