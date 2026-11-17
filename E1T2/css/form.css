@@ -1,107 +1,361 @@
+/* =====================================================================
+   RESET
+   ===================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
 
 body {
-    margin: 0px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
     background-image: url('../asset/fondo.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    background-attachment: scroll;
     font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
 }
 
-h4 {
-    font-size: 20px; 
-    font-weight: normal;
-    text-align: justify;
+img {
+    max-width: 100%;
 }
 
-
-/*MAIN*/
-
+/* =====================================================================
+   MAIN (MÓVIL)
+   ===================================================================== */
 main {
-    margin-top: 0%;
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-bottom: 5%;
-
+    flex: 1;                /* el footer queda abajo aunque haya poco contenido */
+    width: 100%;
+    max-width: 900px;       /* en pantallas grandes no se estira de más */
+    margin: 0 auto;
+    padding: 24px 12px;
 }
 
-.izenabizen {
+fieldset {
     display: flex;
-
+    flex-direction: column;
+    gap: 18px;
+    border: 4px solid black;
+    border-radius: 25px;
+    padding: 16px;
+    background-color: #dfdfdf;
+    min-width: 0;           /* sin esto, un fieldset no encoge por debajo de su contenido */
 }
 
-.izen {
-    margin-right: 10px;
+legend {
+    padding: 0 10px;
 }
 
-e {
+legend h1 {
+    font-size: clamp(1.4rem, 6vw, 2.25rem);
+    line-height: 1.2;
+}
+
+/* Cada pareja etiqueta + campo */
+.eremua {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+label {
+    font-size: clamp(1.05rem, 4vw, 1.25rem);
+}
+
+/* El asterisco de "obligatorio" (antes era <e>, que no existe en HTML) */
+.derrigorra {
     color: red;
 }
 
-textarea {
-    resize: none;
-    font-size: 20px;
-    padding: 10px;
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    height: 200px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 3px solid black;
-}
-
-
-
-fieldset {
-    border: 5px solid black;
-    border-radius: 35px;
-    padding: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: #dfdfdf;
-}
-
-
-input {
-    font-family: "Google Sans", "Product Sans", "Poppins", "Segoe UI", sans-serif;
-    font-size: 20px;
-    border-radius: 25px;
-    
-}
-
-.newsletterlabel,
-.newsletter {
+/* Nombre y apellido: uno debajo del otro en móvil */
+.izenabizen {
     display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
 
-#izen, #abizen {
-    width: 95%;
+/* Campos de texto: siempre al 100% de su caja */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 16px;
+    font-family: inherit;
+    font-size: 16px;        /* 16px mínimo: con menos, iPhone hace zoom al tocar el campo */
+    border: 3px solid black;
+    border-radius: 25px;
+    background: #ffffff;
 }
 
-#email {
-   width: 98%;
-   
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: 3px solid #c51818;
+    outline-offset: 2px;
 }
 
-input[type="checkbox"] {
-    
-   
+textarea {
+    resize: vertical;       /* solo hacia abajo: nunca rompe el ancho */
+    min-height: 160px;
 }
 
+hr {
+    border: 0;
+    border-top: 2px solid #b5b5b5;
+}
+
+/* Newsletter: casilla y texto alineados */
+.newsletterlabel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.newsletter {
+    flex: 0 0 auto;
+    width: 24px;
+    height: 24px;
+    accent-color: #000000;
+    cursor: pointer;
+}
 
 input[type="submit"] {
-    width: 30%;
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 24px;
     background: #ffffff;
     border: 3px solid #000000;
-    color: #000000;
-    text-align: center;
-    padding: 10px;
-    font-weight: 600;
     border-radius: 45px;
-    font-size: 15px;
-    transition: transform 0.5s ease;
+    color: #000000;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    transform: scale(1.05);
+input[type="submit"]:focus-visible {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+/* Hover solo con ratón (en táctil se queda "pegado") */
+@media (hover: hover) {
+    input[type="submit"]:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* =====================================================================
+   TABLET (≥ 600px): nombre y apellido lado a lado
+   ===================================================================== */
+@media (min-width: 600px) {
+    main {
+        padding: 40px 24px;
+    }
+
+    fieldset {
+        border-width: 5px;
+        border-radius: 35px;
+        padding: 24px 32px;
+    }
+
+    .izenabizen {
+        flex-direction: row;
+    }
+
+    .izenabizen .eremua {
+        flex: 1 1 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 18px;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        align-self: flex-start;
+        min-width: 220px;
+    }
+}
+
+/* =====================================================================
+   ESCRITORIO (≥ 1200px)
+   ===================================================================== */
+@media (min-width: 1200px) {
+    body {
+        background-attachment: fixed;
+    }
+
+    main {
+        padding: 60px 24px;
+    }
+
+    fieldset {
+        padding: 32px 48px;
+    }
+}
+
+/* =====================================================================
+   MENÚ DESPLEGABLE (hamburguesa)
+   Por debajo de 992px el header de escritorio se oculta y lo sustituyen
+   la barra superior (.barra-movil) y el panel lateral (.container-menu).
+   Para cambiar el punto de cambio, modifica 992px / 991px en las 2 reglas
+   @media de este bloque.
+   ===================================================================== */
+
+/* El checkbox es solo el "interruptor": se maneja con los <label for="btn-menu"> */
+#btn-menu {
+    display: none;
+}
+
+/* Barra superior: oculta por defecto (escritorio) */
+.barra-movil {
+    display: none;
+}
+
+/* Fondo oscuro + panel lateral */
+.container-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 110;           /* por encima del aviso de cookies (100) */
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Al pulsar el fondo oscuro, se cierra el menú */
+.menu-fondo {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+.cont-menu {
+    position: relative;
+    z-index: 1;
+    width: min(280px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    background: #5a5757;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0);
+}
+
+.cont-menu nav {
+    padding-top: 70px;
+}
+
+.cont-menu ul {
+    list-style: none;
+}
+
+.cont-menu nav a {
+    display: block;
+    padding: 18px 20px;
+    color: #c7c7c7;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cont-menu nav a:hover,
+.cont-menu nav a:focus-visible {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #c7c7c7;
+}
+
+.cerrar-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Con el menú abierto, la página de detrás no hace scroll */
+body:has(#btn-menu:checked) {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    /* body > header (más específico) para ganar a lo que ponga header.css */
+    body > header {
+        display: none;
+    }
+
+    .barra-movil {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 90;
+        height: 64px;
+        padding: 0 12px;
+        background: #5a5757;
+    }
+
+    .barra-movil label {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .barra-movil img {
+        display: block;
+        height: 40px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Si se abre el menú y luego se agranda la ventana, que no se quede colgado */
+    .container-menu {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container-menu,
+    .cont-menu {
+        transition: none;
+    }
 }

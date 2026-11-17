@@ -1,28 +1,49 @@
+/* =====================================================================
+   FOOTER — compartido por index.html, cookies.html y form.html
+   ===================================================================== */
+
+/* ---------- BASE (MÓVIL): todo en columna y centrado ---------- */
 .footer-bilatzailea {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    height: 100px;
+    gap: 12px;
+    padding: 20px 15px;
+    /* sin height fija: la altura la decide el contenido, así nada se sale */
     background-color: #ebebeb;
-}
-
-footer>div {
-    height: 100%;
+    text-align: center;
 }
 
 .logoafooter img {
-    height: 100px;
+    display: block;
+    height: 70px;
     width: auto;
+}
+
+.informazioafooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+}
+
+/* El copyright: vale tanto si está en <p> como en <h2> (cada página lo tiene distinto) */
+.informazioafooter p,
+.informazioafooter h2 {
+    margin: 0;
+    font-size: clamp(0.9rem, 3.5vw, 1.25rem);
+    line-height: 1.3;
+    overflow-wrap: break-word;
 }
 
 .saresozialak {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 12px;
-    height: 100%;
-    width: 30%;
 }
 
 .saresozialak a {
@@ -32,23 +53,24 @@ footer>div {
 }
 
 .saresozialak img {
-    height: 80px;
-    width: 80px;
+    display: block;
+    height: 48px;
+    width: 48px;
     object-fit: contain;
-    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.saresozialak img:hover {
-    transform: scale(1.15);
+.saresozialak a:focus-visible {
+    outline: 3px solid #000000;
+    outline-offset: 3px;
+    border-radius: 8px;
 }
 
-.informazioafooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 40%;
+/* Hover solo con ratón (en táctil se queda "pegado") */
+@media (hover: hover) {
+    .saresozialak img:hover {
+        transform: scale(1.15);
+    }
 }
 
 .footer-lerroa {
@@ -56,4 +78,61 @@ footer>div {
     height: 15px;
     background-color: #ffd4d4;
     margin: 0px;
+}
+
+/* ---------- TABLET (≥ 768px): logo | texto | redes en una fila ---------- */
+@media (min-width: 768px) {
+    .footer-bilatzailea {
+        flex-direction: row;
+        gap: 20px;
+        padding: 15px 2.5%;
+        text-align: left;
+    }
+
+    .logoafooter,
+    .saresozialak {
+        flex: 0 0 auto;
+    }
+
+    .logoafooter img {
+        height: 80px;
+    }
+
+    .informazioafooter {
+        flex: 1 1 auto;
+        width: auto;
+    }
+
+    .informazioafooter p,
+    .informazioafooter h2 {
+        text-align: center;
+    }
+
+    .saresozialak {
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .saresozialak img {
+        height: 56px;
+        width: 56px;
+    }
+}
+
+/* ---------- ESCRITORIO (≥ 1200px): tamaños originales ---------- */
+@media (min-width: 1200px) {
+    .logoafooter img {
+        height: 100px;
+    }
+
+    .saresozialak img {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .saresozialak img {
+        transition: none;
+    }
 }

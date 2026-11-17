@@ -1,20 +1,47 @@
 <!DOCTYPE html>
+<html lang="eu">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gamestop formulario</title>
-    <link rel="stylesheet" href="../css/form.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <!-- form.css el último, para que el menú responsive gane a header.css -->
+    <link rel="stylesheet" href="../css/form.css">
     <link rel="icon" type="image/x-icon" href="../asset/logo.png">
 </head>
 
-
 <body>
+
+<!-- Menu desplegable (móvil/tablet): sustituye al header por debajo de 992px -->
+<input type="checkbox" id="btn-menu">
+
+<div class="barra-movil">
+    <label for="btn-menu" aria-label="Menua ireki">☰</label>
+    <a href="../index.html"><img src="../asset/izen-logo.png" alt="GameStop"></a>
+</div>
+
+<div class="container-menu">
+    <label for="btn-menu" class="menu-fondo" aria-label="Menua itxi"></label>
+    <div class="cont-menu">
+        <label for="btn-menu" class="cerrar-menu" aria-label="Menua itxi">✕</label>
+        <nav aria-label="Menu nagusia">
+            <ul>
+                <li><a href="../index.html">Hasiera</a></li>
+                <li><a href="./jokalariak.html">Jokalariak</a></li>
+                <li><a href="./albisteak.html">Berriak</a></li>
+                <li><a href="./clasifikazio.html">Sailkapena</a></li>
+                <li><a href="./form.html">Gurekin kontaktatu</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!-- FIN Menu desplegable -->
 
     <header>
         <div class="header-bilatzailea">
-            <div class="logoa"><a href="../index.html"><img src="../asset/izen-logo.png"></a></div>
+            <div class="logoa"><a href="../index.html"><img src="../asset/izen-logo.png" alt="GameStop"></a></div>
             <div class="nabegatzailea">
                 <a href="../htmls/jokalariak.html">
                     <h2>JOKALARIAK</h2>
@@ -31,62 +58,45 @@
     </header>
 
     <main>
-
         <form>
             <fieldset>
                 <legend>
                     <h1>Harremanetarako formularioa</h1>
                 </legend>
-                <div class="izenabizen">
-                    <div class="izen">
-                        <label for="izen">
-                            <h4>Izena:<e> *</e>
-                            </h4>
-                        </label>
 
-                        <input type="text" required id="izen" name="izen" placeholder="Izena">
+                <div class="izenabizen">
+                    <div class="eremua">
+                        <label for="izen">Izena:<span class="derrigorra"> *</span></label>
+                        <input type="text" required id="izen" name="izen" placeholder="Izena" autocomplete="given-name">
                     </div>
 
-                    <br>
-
-                    <div class="abizen">
-                        <label for="abizen">
-                            <h4>Abizena:<e> *</e>
-                            </h4>
-                        </label>
-
-                        <input type="text" required id="abizen" name="abizen" placeholder="Abizena">
+                    <div class="eremua">
+                        <label for="abizen">Abizena:<span class="derrigorra"> *</span></label>
+                        <input type="text" required id="abizen" name="abizen" placeholder="Abizena" autocomplete="family-name">
                     </div>
                 </div>
 
-                <br>
+                <div class="eremua">
+                    <label for="email">Email helbidea:<span class="derrigorra"> *</span></label>
+                    <input type="email" id="email" required name="email" placeholder="eredu@email.com" autocomplete="email">
+                </div>
 
-                <label for="email">
-                    <h4>Email helbidea:<e> *</e>
-                    </h4>
-                </label>
-
-                <input type="email" id="email" required name="email" placeholder="eredu@email.com">
-
-
-                <label for="kontaktu">
-                    <h4>Kontaktuaren zergatik:<e> *</e>
-                    </h4>
-                </label>
-
-                <textarea id="kontaktu" required name="kontaktu" rows="7" cols="99%"></textarea>
+                <div class="eremua">
+                    <label for="kontaktu">Kontaktuaren zergatik:<span class="derrigorra"> *</span></label>
+                    <textarea id="kontaktu" required name="kontaktu" rows="7"></textarea>
+                </div>
 
                 <hr>
-                <label for="comentarioak">
-                    <h4>Komentarioa:</h4>
-                </label>
-                <textarea id="comentarioak" name="comentarioak" rows="7" cols="99%"></textarea>
+
+                <div class="eremua">
+                    <label for="comentarioak">Komentarioa:</label>
+                    <textarea id="comentarioak" name="comentarioak" rows="7"></textarea>
+                </div>
 
                 <label for="newsletter" class="newsletterlabel">
                     <input type="checkbox" id="newsletter" name="newsletter" value="Bai" class="newsletter">
-                    <h4>Newsletter-era harpidetu</h4>
+                    Newsletter-era harpidetu
                 </label>
-
 
                 <input type="submit" value="Bidali formularioa">
             </fieldset>
@@ -108,11 +118,16 @@
                 <a href="https://x.com/GameStop"><img src="../asset/xlogo.png" alt="Twitter"></a>
                 <a href="https://www.youtube.com/channel/UCX1aoT25QZzgGQJo4uCtRxw"><img src="../asset/ytlogo.png"
                         alt="YouTube"></a>
-
             </div>
         </div>
     </footer>
 
+<script>
+    // Cierra el menú al pulsar Escape o al volver a la página con el botón "atrás"
+    const chkMenu = document.getElementById('btn-menu');
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') chkMenu.checked = false; });
+    window.addEventListener('pageshow', () => { chkMenu.checked = false; });
+</script>
 </body>
 
 </html>
