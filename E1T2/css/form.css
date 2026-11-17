@@ -241,7 +241,7 @@ input[type="submit"]:focus-visible {
     height: 100vh;
     height: 100dvh;
     overflow-y: auto;
-    background: #5a5757;
+    background: #ffffff;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
@@ -261,7 +261,7 @@ input[type="submit"]:focus-visible {
 .cont-menu nav a {
     display: block;
     padding: 18px 20px;
-    color: #c7c7c7;
+    color: #c51818;
     text-decoration: none;
     border-left: 5px solid transparent;
     transition: all 0.3s ease;
@@ -269,9 +269,9 @@ input[type="submit"]:focus-visible {
 
 .cont-menu nav a:hover,
 .cont-menu nav a:focus-visible {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
-    border-left-color: #c7c7c7;
+    color: #851212;
+    background: #ebebeb;
+    border-left-color: #c51818;
 }
 
 .cerrar-menu {
@@ -282,7 +282,7 @@ input[type="submit"]:focus-visible {
     place-items: center;
     width: 44px;
     height: 44px;
-    color: #ffffff;
+    color: #c51818;
     font-size: 22px;
     cursor: pointer;
 }
@@ -307,7 +307,7 @@ body:has(#btn-menu:checked) {
         z-index: 90;
         height: 64px;
         padding: 0 12px;
-        background: #5a5757;
+        background: #ebebeb;
     }
 
     .barra-movil label {
@@ -315,7 +315,7 @@ body:has(#btn-menu:checked) {
         place-items: center;
         width: 44px;
         height: 44px;
-        color: #ffffff;
+        color: #c51818;
         font-size: 28px;
         line-height: 1;
         cursor: pointer;
