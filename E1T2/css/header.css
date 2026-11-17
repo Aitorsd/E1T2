@@ -1,17 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+body {
+    margin: 0;
+}
 
+header,
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
 
 .header-bilatzailea {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
     background-color: #ebebeb;
     padding: 5px;
     width: 100%;
-    height: 120px;
+    min-height: 120px;
     box-sizing: border-box;
-    
 }
 
 #hemen {
@@ -20,14 +29,14 @@
 }
 
 .logoa {
-    width: 20%;
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
 
 .logoa img {
     padding-left: 15px;
-    width: 280px;
+    width: clamp(150px, 22vw, 280px);
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -39,22 +48,26 @@
 .nabegatzailea {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: white;
     border-radius: 60px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 0 35px;
     margin-right: 15px;
-    height: 90%;
+    min-height: 90px;
     border: 5px solid #dddddd;
 }
 
 .nabegatzailea a {
-    margin: 20px;
+    padding: 10px 20px;
     text-decoration: none;
     color: #c51818;
-    align-items: center;
-    transition: color 1.5s ease;
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nabegatzailea h2 {
+    margin: 0;
+    font-size: clamp(1rem, 1.7vw, 1.5rem);
 }
 
 .nabegatzailea>a:hover {
@@ -66,17 +79,7 @@
     width: 100%;
     height: 15px;
     background-color: #ff5757;
-    margin: 0px;
-}
-
-body {
     margin: 0;
-}
-
-header,
-footer {
-    width: 100%;
-    box-sizing: border-box;
 }
 
 h4 {
@@ -84,3 +87,184 @@ h4 {
     font-weight: normal;
     text-align: justify;
 }
+
+@media screen and (max-width: 1000px) {
+    .header-bilatzailea {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logoa img {
+        padding-left: 0;
+        width: 200px;
+    }
+
+    .nabegatzailea {
+        margin: 0;
+        padding: 0 20px;
+        border-radius: 40px;
+        min-height: 0;
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logoa img {
+        width: 160px;
+    }
+
+    .nabegatzailea {
+        flex-direction: column;
+        padding: 10px 20px;
+        border-radius: 30px;
+        border-width: 4px;
+    }
+
+    .nabegatzailea a {
+        padding: 8px 0;
+    }
+
+    .nabegatzailea h2 {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .nabegatzaile-lerroa {
+        height: 10px;
+    }
+}
+
+#btn-menu {
+    display: none;
+}
+
+.barra-movil {
+    display: none;
+}
+
+.container-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 110;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-fondo {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+.cont-menu {
+    position: relative;
+    z-index: 1;
+    width: min(280px, 85vw);
+    height: 100vh;
+    height: 100dvh;
+    overflow-y: auto;
+    background: #5a5757;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0);
+}
+
+.cont-menu nav {
+    padding-top: 70px;
+}
+
+.cont-menu ul {
+    list-style: none;
+}
+
+.cont-menu nav a {
+    display: block;
+    padding: 18px 20px;
+    color: #c7c7c7;
+    text-decoration: none;
+    border-left: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.cont-menu nav a:hover,
+.cont-menu nav a:focus-visible {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #c7c7c7;
+}
+
+.cerrar-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+body:has(#btn-menu:checked) {
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    body > header {
+        display: none;
+    }
+
+    .barra-movil {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: sticky;
+        top: 0;
+        z-index: 90;
+        height: 64px;
+        padding: 0 12px;
+        background: #5a5757;
+    }
+
+    .barra-movil label {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .barra-movil img {
+        display: block;
+        height: 40px;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-menu {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .container-menu,
+    .cont-menu {
+        transition: none;
+    }
