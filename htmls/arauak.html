@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arauak eta izena ematea | GameStop E-Sports</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/arauak.css">
+    <link rel="icon" type="image/x-icon" href="../asset/logo.png">
+</head>
+<body>
+    <input type="checkbox" id="btn-menu">
+
+    <div class="barra-movil">
+        <label for="btn-menu" aria-label="Menua ireki">☰</label>
+        <a href="../index.html"><img src="../asset/izen-logo.png" alt="GameStop"></a>
+    </div>
+
+    <div class="container-menu">
+        <label for="btn-menu" class="menu-fondo" aria-label="Menua itxi"></label>
+        <div class="cont-menu">
+            <label for="btn-menu" class="cerrar-menu" aria-label="Menua itxi">✕</label>
+            <nav aria-label="Menu nagusia">
+                <ul>
+                    <li><a href="../index.html">Hasiera</a></li>
+                    <li><a href="./Jokalariak-mini.html">Jokalariak</a></li>
+                    <li><a href="./albisteak.html">Berriak</a></li>
+                    <li><a href="./clasifikazio.html">Sailkapena</a></li>
+                    <li><a href="./form.html">Gurekin kontaktatu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-bilatzailea">
+            <div class="logoa"><a href="../index.html"><img src="../asset/izen-logo.png" alt="GameStop"></a></div>
+            <div class="nabegatzailea">
+                <a href="./Jokalariak-mini.html"><h2>JOKALARIAK</h2></a>
+                <a href="./albisteak.html"><h2>BERRIAK</h2></a>
+                <a href="./clasifikazio.html"><h2>SAILKAPENA</h2></a>
+                <a href="./form.html"><h2>GUREKIN KONTAKTATU</h2></a>
+            </div>
+        </div>
+        <hr class="nabegatzaile-lerroa">
+    </header>
+
+    <main>
+        <section class="arauak-sarrera">
+            <img src="../asset/izen-emateak.jpg" alt="Txapelketan izena ematea">
+            <div class="sarrera-testua">
+                <h1>Arauak eta izena ematea</h1>
+                <p>Prest al zaude eSports komunitateko partaide izateko? Irakurri araudi nagusia eta bete izena emateko urratsak.</p>
+            </div>
+        </section>
+
+        <section class="arauak-edukia">
+            <article>
+                <h2>Oinarrizko arauak</h2>
+                <ol>
+                    <li>Jokalari bakoitzak kontu pertsonal eta benetakoa erabili beharko du.</li>
+                    <li>Partidak irekitzean partaideen izenak eta partida-kodea egiaztatu behar dira.</li>
+                    <li>Ezinbestekoa da kiroltasunez jokatzea: irainik, iruzurrik edo nahi gabeko laguntzarik gabe.</li>
+                    <li>Partida utzi, deskonektatu edo manipulatzen bada, antolatzaileek emaitza berrikusi dezakete.</li>
+                    <li>Gatazkak antolatzaileei jakinarazi behar zaizkie frogak eta ordua azalduz.</li>
+                </ol>
+            </article>
+
+            <article>
+                <h2>Nola elkartu</h2>
+                <ol>
+                    <li>Jaso zenbatzailearen izena eta zure joko-plataformako identifikatzailea.</li>
+                    <li>Bete <a href="./form.html">harremanetarako formularioa</a> zure datuekin eta mezua.</li>
+                    <li>Idatzi mezuaren gaian <strong>“Izena ematea — Rocket League”</strong>.</li>
+                    <li>Antolatzaileak egiaztatu, taldean edo txapelketan onartuko zaituen eta sarearen esteka bidaliko dizu.</li>
+                </ol>
+            </article>
+
+            <article>
+                <h2>Hartzeko baldintzak</h2>
+                <ul>
+                    <li>Gutxienez 16 urte izan edo gurasoaren baimen idatzia izan.</li>
+                    <li>Integrazioa eta jokatzeko arauak errespetatzea.</li>
+                    <li>Partida egutegira ohartzea eta garaiz agertzea.</li>
+                </ul>
+            </article>
+
+            <a class="botoia" href="./form.html">IZENA EMATEKO INFORMAZIOA BIDALI</a>
+        </section>
+    </main>
+
+    <footer>
+        <hr class="nabegatzaile-lerroa">
+        <div class="footer-bilatzailea">
+            <div class="logoafooter"><img src="../asset/logo.png" alt="GameStop logoa"></div>
+            <div class="informazioafooter"><h2>© 1999-2026 GameStop™ eta AIA S.A.™</h2></div>
+            <div class="saresozialak">
+                <a href="https://www.instagram.com/gamestop"><img src="../asset/iglogo.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/GameStop/"><img src="../asset/facebooklogo.png" alt="Facebook"></a>
+                <a href="https://x.com/GameStop"><img src="../asset/xlogo.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/channel/UCX1aoT25QZzgGQJo4uCtRxw"><img src="../asset/ytlogo.png" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const chkMenu = document.getElementById('btn-menu');
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') chkMenu.checked = false; });
+        window.addEventListener('pageshow', () => { chkMenu.checked = false; });
+    </script>
+</body>
+</html>
